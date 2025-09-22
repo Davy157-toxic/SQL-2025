@@ -1,0 +1,9 @@
+Cliente-Fatura
+1:N
+Um cliente pode ter varias faturas e mas cada fatura pertence a um so cliente
+Fatura-Produto
+N:N
+Uma fatura pode ter varios produtos e um produto pode estar presente em varias fatura 
+Funcionario-Fatura
+1:N
+Um funcionario pode emitir muitas faturas, mas as faturas so podem ser emitidas po um fincionario 
