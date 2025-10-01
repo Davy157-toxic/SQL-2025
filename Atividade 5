@@ -1,5 +1,5 @@
           |                                                                            |
-          | Aluno(FK)-Nomes, IdCartão, Curso, NumeroAluno(PK)                          |
+          | Aluno(FK)-Nomes, IdAluno, Curso, NumeroAluno(PK)                          |
           |                                                                            |
           | Professores(FK)-Nomes, Idade, IDProfessor, Contacto(PK)                    |
           |                                                                            |
