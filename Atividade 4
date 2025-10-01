@@ -1,0 +1,11 @@
+          |                                                                            |
+          | Aluno(FK)-Nomes, IdCartão, Curso, NumeroAluno(PK)                          |
+          |                                                                            |
+          | Professores(FK)-Nomes, Idade, IdCurso, Contacto(PK)                        |
+          |                                                                            |
+BD-Eschool| Cursos(FK)-IdCurso, NumeroDeAluno, NumeroModulos, NumeroAulas(PK)          |
+          |                                                                            |
+          | Funcionarios(FK)-Nomes, Idade, HorasDeTrabalho, NumeroDeFuncionarios(PK)   |
+          |____________________________________________________________________________|
+            
+        
