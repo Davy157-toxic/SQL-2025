@@ -1,0 +1,11 @@
+Alunos:(FK)
+(Id-aluno(PK), nome, DataNascimento, Morada, Curso);
+
+Funcionarios:(FK)
+(Id-Funcionario(PK), Nome, Departamento, telefone);
+
+Professores:(FK)
+(Id-Professor(PK), Nome, Especialidade, Telefone, Email, Id-Funcionarios(CK));
+
+Curso:(FK)
+(Id-Curso(PK), Disciplina, nome, CargaHoraria);
