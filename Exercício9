@@ -1,0 +1,21 @@
+CREATE DATABASE CookieHouse;
+USE CookieHouse;
+
+CREATE TABLE Clientes (
+    ClienteID  PRIMARY Key,
+    Nome,
+    Telefone,
+  );
+CREATE TABLE Funcionarios (
+    FuncionarioID PRIMARY Key,
+    PedidosID
+    
+);
+
+CREATE TABLE Pedidos (
+    PedidoID  PRIMARY Key,
+    ClienteID ,
+    FuncionarioID,
+    FOREIGN KEY (ClienteID)
+    FOREIGN KEY (FuncionarioID)
+);
