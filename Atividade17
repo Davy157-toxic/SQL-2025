@@ -1,0 +1,31 @@
+-- criando Database -- 
+CREATE DATABASE Armazem_Produtos;
+
+USE Armazem_Produtos ;
+-- Criando tabela --
+CREATE TABLE Armazem (
+cod_prod INT NOT NULL,
+valor_unit DECIMAL(10,2) NOT NULL,
+quantidade INT NOT NULL,
+desconto INT,
+produto_ID INT PRIMARY KEY
+);
+-- INSERT Dados --
+INSERT INTO Armazem (cod_prod, valor_unit, quantidade, desconto, produto_id)
+VALUE 
+(5,30.00, 10, 15,1),
+(4,10.00,10,5,2),
+(1,25.00,12,5,3),
+(2,13.50,13,5,4),
+(3,15.00,3,NULL,5),
+(5,30.00,6,NULL,6),
+(1,25.00,22,15,7),
+(3,15.00,25,20,8),
+(1,25.00,10,3,9),
+(2,13.50,10,4,10),
+(3,15.00,10,4,11),
+(5,30.00,10,1,12);
+
+
+-- SELECT tabela --
+SELECT * FROM Armazem;
