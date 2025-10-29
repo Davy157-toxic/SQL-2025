@@ -1,0 +1,16 @@
+-- SELECT NULL EX 1--
+SELECT cod_prod, valor_unit, desconto
+FROM armazem
+WHERE desconto is NULL OR desconto = 0;
+-- Alterar dados onde e NULL na tabela EX 2--
+UPDATE Armazem
+SET desconto = 0
+WHERE desconto IS NULL;
+-- Mostra os produtos com desconto 10 a 20 mostrando id EX 3--
+SELECT produto_ID, quantidade, desconto
+FROM Armazem
+WHERE desconto > 10 AND desconto < 20;
+-- Apresentar codigos de produto 2 --
+SELECT quantidade, valor_unit
+FROM Armazem
+WHERE cod_prod = 2;
