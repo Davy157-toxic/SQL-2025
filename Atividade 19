@@ -1,0 +1,17 @@
+USE portugal;
+-- 2 --
+ALTER TABLE codigo_postal 
+RENAME TO Codigo_postal1;
+-- 4 --
+ALTER TABLE codigo_postal1 
+RENAME COLUMN area TO areakm2;
+-- 5 -- 
+SELECT AVG(areakm2) FROM codigo_postal1;
+-- 6 --
+SELECT nome, codigo_postal 
+FROM codigo_postal1
+WHERE areakm2 > 80;
+-- 7 --
+SELECT nome,distrito
+FROM codigo_postal1
+WHERE Codigo_Postal = 7830;
