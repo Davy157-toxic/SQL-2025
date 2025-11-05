@@ -1,0 +1,22 @@
+-- Exercicio 20.1, Criar DATABASE --
+CREATE DATABASE Escola;
+USE Escola;
+-- Exercicio 20.2, Cria a tabela e adicione colunas --
+CREATE TABLE Estudantes (
+Estudantes_ID INT PRIMARY KEY,
+Nome VARCHAR(100),
+Idade INT,
+Data_Nascimento Date
+);
+-- Exercicio 20.3,20.4, Inserindo dados --
+INSERT INTO Estudantes ( Estudantes_ID, Nome, Idade, Data_Nascimento )
+VALUE 
+(1, "Arnaldo", 16, '2009-03-04'),
+(2, "Jorge", 12, '2013-06-07'),
+(3, "Claudia", 35, '1990-05-10'),
+(4, "Sergio", 15, '2010-07-12'),
+(5, "Luciene", 25, '2000-10-19'),
+(6, "Alexandro", 36, '1989-11-20'),
+(7, "Roberto", 16, '2009-05-19');
+
+SELECT * FROM Estudantes;
