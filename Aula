@@ -1,0 +1,22 @@
+CREATE DATABASE Mercado;
+USE Mercado;
+ -- Criando tabelaS -- 
+ CREATE TABLE Clientes(
+ ID_clientes INT PRIMARY KEY,
+ Nome VARCHAR(20),
+ Contacto INT UNIQUE,
+ Morada VARCHAR(30),
+ Criado_por_fucID INT,
+ FOREIGN KEY ( Criado_por_fucID)
+	REFERENCES Funcionarios(FuncionarioID)
+ );
+ -- tabela 2--
+ CREATE TABLE Funcionarios (
+ FuncionarioID INT PRIMARY KEY,
+ Nome VARCHAR(20),
+ Morada VARCHAR(30),
+ Contacto INT UNIQUE
+ );
+ 
+ DROP TABLE Funcionarios;
+  DROP TABLE Clientes;
