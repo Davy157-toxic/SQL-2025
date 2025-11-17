@@ -1,0 +1,39 @@
+-- Exercicio 1.1 --
+CREATE DATABASE NORTHWIND;
+USE NORTHWIND;
+-- Criando tabela --
+CREATE TABLE Customers (
+CustomersName VARCHAR(200),
+CustomersID INT PRIMARY KEY, 
+Companyname VARCHAR(200) 
+);
+-- Inserindo dados --
+INSERT INTO Customers 
+VALUES 
+( 'Claudio', 1, 'Continente'),
+( 'Renata', 2, 'Pingo-Doce'),
+( 'João', 3, 'Continente'),
+( 'Jorge', 4, 'Lidell'),
+( 'Felipão', 5, 'Continente'),
+( 'Jose', 6, 'Pingo-Doce');
+
+-- Selecionando tabela -- 
+SELECT * FROM Customers 
+ORDER BY Companyname DESC;
+-- Exercicio 1.2 -- 
+ALTER TABLE Customers
+ADD (
+ContactName VARCHAR(200),
+Region VARCHAR(200),
+Country VARCHAR(200)
+);
+-- Inserindo novos dados --
+INSERT INTO Customers ( ContactName, Region, Country)
+VALUES (
+('Rogerio', 'Coimbra','Portugal'),
+('Dexter', 'Aveiro', 'Portugal'),
+('Masuka', 'Porto' , 'Portugal'),
+('Dexter', 'Lisboa', 'PortugaL'),
+('Masuka', 'Porto', 'Portugal' ),
+('Rogerio', 'Aveiro', 'Portugal')
+);
