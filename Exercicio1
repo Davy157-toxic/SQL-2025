@@ -28,12 +28,26 @@ Region VARCHAR(200),
 Country VARCHAR(200)
 );
 -- Inserindo novos dados --
-INSERT INTO Customers ( ContactName, Region, Country)
-VALUES (
-('Rogerio', 'Coimbra','Portugal'),
-('Dexter', 'Aveiro', 'Portugal'),
-('Masuka', 'Porto' , 'Portugal'),
-('Dexter', 'Lisboa', 'PortugaL'),
-('Masuka', 'Porto', 'Portugal' ),
-('Rogerio', 'Aveiro', 'Portugal')
-);
+UPDATE Customers 
+ SET ContactName= 'Rogerio', Region = 'Coimbra', Country = 'Portugal'
+ WHERE CustomersID = 1;
+ 
+ UPDATE Customers 
+ SET ContactName= 'Dexter', Region = 'Aveiro', Country = 'Portugal'
+ WHERE CustomersID = 2;
+ 
+ UPDATE Customers 
+ SET ContactName= 'Masuka', Region = 'Porto', Country = 'Portugal'
+ WHERE CustomersID = 3;
+
+UPDATE Customers 
+ SET ContactName= 'Dexter', Region = 'Lisboa', Country = 'Portugal'
+ WHERE CustomersID = 4;
+
+UPDATE Customers 
+ SET ContactName= 'Masuka', Region = 'Porto', Country = 'Portugal'
+ WHERE CustomersID = 5;
+
+UPDATE Customers 
+ SET ContactName= 'Rogerio', Region = 'Aveiro', Country = 'Portugal'
+ WHERE CustomersID = 6;
