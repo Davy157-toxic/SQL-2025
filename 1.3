@@ -1,0 +1,19 @@
+CREATE TABLE Products (
+ProductsID INT PRIMARY KEY ,
+CategoryID INT,
+SupplierID INT,
+ProductName VARCHAR (20),
+Unitsinstock INT
+);
+
+INSERT INTO Products
+VALUES 
+ (1,1,1,'Batata',2),
+ (2,1,2,'Batata Frita',1),
+ (3,2,3,'Arroz',3),
+ (4,2,4,'Feijão',3),
+ (5,2,5,'Grão',5);
+ 
+ SELECT * FROM Products
+ ORDER BY Unitsinstock DESC;
+ 
