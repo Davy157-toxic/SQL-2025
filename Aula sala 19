@@ -1,0 +1,26 @@
+CREATE DATABASE NuBank;
+USE NuBank;
+-- Criando tabela clientes   --
+CREATE TABLE Clientes (
+ClientesID INT PRIMARY KEY,
+NomeCliente VARCHAR(20),
+ContaID INT
+);
+-- Inserindo dados na tabela clientes --
+INSERT INTO Clientes
+VALUES 
+(1,"Jose",209),
+(2,"Claudio",308),
+(3,"Rogerio",402);
+-- Criando Tabela Contas --
+CREATE TABLE Contas (
+ContasID INT PRIMARY KEY,
+ClientesID INT,
+FOREIGN KEY (ClientesID) REFERENCES Clientes (ClientesID)
+);
+-- Inserindo Dados --
+INSERT INTO Contas 
+VALUES 
+(1,1),
+(2,2),
+(3,3);
