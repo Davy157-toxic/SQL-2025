@@ -1,0 +1,27 @@
+-- Criando base de dados --
+CREATE DATABASE EstacionaInterprice;
+USE EstacionaInterprice;
+-- Criando Estacionamneto --
+CREATE TABLE Estacionamento(
+Num INT PRIMARY KEY,
+Piso INT,
+Capacidade INT 
+);
+-- Criando tabela Modelo --
+CREATE TABLE Modelo (
+codMod INT PRIMARY KEY,
+Nome VARCHAR(20),
+Marca VARCHAR(20)
+);
+-- Criando tabela clientes --
+CREATE TABLE Clientes(
+NIF INT PRIMARY KEY,
+Nome VARCHAR(20),
+dtNasc DATE
+);
+-- criando tabela veiculos --
+CREATE TABLE Veiculo (
+Matricula VARCHAR(20),
+Cor VARCHAR(20),
+Modelo_codMod INT FOREIGN KEY REFERENCE codMod (Modelo_codMod)
+);
